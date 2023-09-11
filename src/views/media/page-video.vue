@@ -7,7 +7,7 @@ video {
 
 <template>
   <div class="pos-center">
-    <video :src="src" controls></video>
+    <video :src="src" playsinline controls></video>
   </div>
 </template>
 
