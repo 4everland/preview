@@ -1,0 +1,14 @@
+@import './flex.css';
+@import './pos.css';
+
+body {
+  margin: 0;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.ta-c {
+  text-align: center;
+}
