@@ -7,6 +7,10 @@ export default [
     component: HomeView,
   },
   {
+    path: '/markmap',
+    component: () => import('./text/page-markmap.vue'),
+  },
+  {
     path: '/code',
     component: () => import('./text/page-code.vue'),
   },
