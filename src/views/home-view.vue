@@ -14,7 +14,7 @@ import IconLoading from '../components/icon-loading.vue'
         <div v-if="src">
           <a :href="src" class="download-btn">
             <div class="al-c">
-              <img src="/icon/open.svg" width="16" />
+              <img src="/imgs/open.svg" width="16" />
               <span>{{ title }}</span>
             </div>
           </a>

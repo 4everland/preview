@@ -43,6 +43,9 @@ export default {
       if (['docx', 'pdf', 'xlsx'].includes(subfix)) {
         return subfix
       }
+      if (['mmd', 'mermaid'].includes(subfix)) {
+        return 'mermaid'
+      }
       if (
         [
           'txt',

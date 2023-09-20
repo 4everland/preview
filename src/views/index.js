@@ -7,6 +7,10 @@ export default [
     component: HomeView,
   },
   {
+    path: '/mermaid',
+    component: () => import('./text/page-mermaid.vue'),
+  },
+  {
     path: '/markmap',
     component: () => import('./text/page-markmap.vue'),
   },

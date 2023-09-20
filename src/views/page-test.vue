@@ -21,6 +21,10 @@ export default {
           subs: ['html', 'js', 'css', 'json'],
         },
         {
+          title: 'Markdown like',
+          subs: ['mmd', 'mermaid'],
+        },
+        {
           title: 'Office',
           subs: ['docx', 'xlsx', 'pdf'],
         },

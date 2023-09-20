@@ -17,6 +17,7 @@
     "markmap-common": "^0.15.3",
     "markmap-lib": "^0.15.4",
     "markmap-view": "^0.15.4",
+    "mermaid": "^10.4.0",
     "prismjs": "^1.29.0",
     "vue": "^3.3.4",
     "vue-demi": "^0.14.6",
