@@ -65,9 +65,6 @@ export default {
 
 
 <style>
-body {
-  background: #fff;
-}
 .empty {
   padding: 20px;
   text-align: center;
