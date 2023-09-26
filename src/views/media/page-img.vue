@@ -8,7 +8,7 @@
   min-width: 50px;
   max-width: 90%;
   max-height: 95vh;
-  background: url(/imgs/bg-trans.svg);
+  background: #fff url(/imgs/bg-trans.svg);
   background-size: 30px;
   transition: all ease 200ms;
 }
