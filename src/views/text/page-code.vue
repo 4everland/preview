@@ -88,7 +88,7 @@ pre.break_word code {
 .main {
   max-width: 900px;
   margin: 0 auto;
-  box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 3px #666;
   min-height: calc(100vh - 40px);
 }
 .hljs,
