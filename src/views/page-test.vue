@@ -3,7 +3,7 @@
     <div v-for="it in list" :key="it.title">
       <h2>{{ it.title }}</h2>
       <p v-for="sub in it.subs" :key="sub">
-        <a target="_blank" :href="'/?src=https://qs3.4everland.store/test.' + sub"
+        <a target="_blank" :href="'/?src=https://qs3.4everland.store/preview/test.' + sub"
           >test.{{ sub }}</a
         >
       </p>
