@@ -8,10 +8,13 @@ export default {
     src() {
       return this.$route.query.src || this.inputSrc
     },
+    name() {
+      return this.src || this.$route.query.name
+    },
     title() {
-      const mat = /\/([^\/]+)$/.exec(this.src)
+      const mat = /\/([^\/]+)$/.exec(this.name)
       if (mat) return mat[1]
-      return this.src
+      return this.name
     },
     type() {
       let { type } = this.$route.query
