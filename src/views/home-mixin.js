@@ -5,11 +5,14 @@ export default {
     }
   },
   computed: {
+    query() {
+      return this.$route.query
+    },
     src() {
-      return this.$route.query.src || this.inputSrc
+      return this.query.src || this.inputSrc
     },
     name() {
-      return this.$route.query.name || this.src
+      return this.query.name || this.src
     },
     title() {
       const mat = /\/([^\/]+)$/.exec(this.name)
@@ -17,7 +20,7 @@ export default {
       return this.name
     },
     type() {
-      let { type } = this.$route.query
+      let { type } = this.query
       if (type) return type
       return this.getType(this.src)
     },

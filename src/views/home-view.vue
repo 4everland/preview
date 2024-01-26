@@ -49,7 +49,10 @@ export default {
   created() {
     // console.log(this.type)
     if (this.goPath) {
-      this.$router.replace(`/${this.goPath}?src=` + encodeURIComponent(this.src))
+      this.$router.replace({
+        path: `/${this.goPath}`,
+        query: this.query,
+      })
     }
   },
   methods: {
