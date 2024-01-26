@@ -9,7 +9,7 @@ export default {
       return this.$route.query.src || this.inputSrc
     },
     name() {
-      return this.src || this.$route.query.name
+      return this.$route.query.name || this.src
     },
     title() {
       const mat = /\/([^\/]+)$/.exec(this.name)
