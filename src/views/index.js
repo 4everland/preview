@@ -31,10 +31,6 @@ export default [
     component: () => import('./media/page-video.vue'),
   },
   {
-    path: '/player',
-    component: () => import('./media/page-player.vue'),
-  },
-  {
     path: '/docx',
     component: () => import('./office/page-docx.vue'),
   },

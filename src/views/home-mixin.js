@@ -55,6 +55,7 @@ export default {
       if (
         [
           'txt',
+          'srt',
           'js',
           'css',
           'html',
