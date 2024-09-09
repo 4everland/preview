@@ -56,6 +56,7 @@ export default {
         [
           'txt',
           'srt',
+          'lrc',
           'js',
           'css',
           'html',

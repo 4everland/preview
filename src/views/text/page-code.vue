@@ -23,6 +23,9 @@ export default {
     src() {
       return this.$route.query.src
     },
+    type() {
+      return this.$route.query.type
+    },
   },
   data() {
     return {
@@ -40,12 +43,12 @@ export default {
         if (text.length > 1024 * 120) {
           throw new Error('too large to highlight')
         }
-        if (/\.json$/.test(this.src)) {
+        if (this.type == 'json') {
           const res = hljs.highlight(text, {
             language: 'json',
           })
           this.$refs.code.innerHTML = res.value
-          this.$refs.pre.style.padding = '30px 20px'
+          this.$refs.pre.style.padding = '15px'
         } else {
           this.$refs.code.textContent = text
           hljs.highlightAll()
@@ -66,7 +69,7 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .outer {
   padding: 20px;
   background: #808080;
